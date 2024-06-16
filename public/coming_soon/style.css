@@ -7,6 +7,9 @@
     font-family: "Lora", serif;
 }
 
+html { overflow-y: scroll; }
+body { position: absolute; }
+
 body {
     overflow: hidden; /* Lock vertical and horizontal scrolling */
 }
