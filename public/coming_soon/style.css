@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 2px 0;
+    box-sizing: border-box;
+    background-color: #FCF5E5;
+    font-family: "Lora", serif;
+}
+
+body {
+    overflow: hidden; /* Lock vertical and horizontal scrolling */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 180px; /* Reduced by 10% */
+    max-height: 135px; /* Reduced by 10% */
+    margin-top: 0; /* No margin above */
+}
+
+.text-1 {
+    font-size: 18px; /* Reduced by 10% */
+    font-weight: 500;
+    margin: 0; /* No margin */
+    text-align: center; /* Align text to center */
+}
+
+.Women {
+    max-width: 405px; /* Reduced by 10% */
+    max-height: 360px; /* Reduced by 10% */
+}
+
+.text-2 {
+    font-size: 27px; /* Reduced by 10% */
+    font-weight: 400;
+    text-align: center; /* Align text to center */
+}
+
+.coming-soon {
+    font-size: 36px; /* Reduced by 10% */
+    font-weight: 700;
+    text-align: center; /* Align text to center */
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Push container2 to the bottom */
+}
+
+.icon {
+    margin: 10px; /* Reduced by 10% */
+}
+
+/* Media queries... */
+
+/* Media query for desktop */
+@media screen and (min-width: 1441px) {
+    /* Styles for larger screens */
+    .text-1 {
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 34px;
+    }
+
+    .coming-soon {
+        font-size: 46px;
+    }
+}
+
+/* Media query for 1281px to 1440px */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    /* Styles for 1440x2560 */
+    .text-1 {
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 38px;
+    }
+
+    .coming-soon {
+        font-size: 46px;
+    }
+}
+
+/* Media query for 1081px to 1280px */
+@media screen and (min-width: 1081px) and (max-width: 1280px) {
+    /* Styles for 1280x800 */
+    .text-1 {
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 36px;
+    }
+
+    .coming-soon {
+        font-size: 44px;
+    }
+}
+
+/* Media query for 1025px to 1080px */
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    /* Styles for 1080x1920 */
+    .text-1 {
+        font-size: 26px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 34px;
+    }
+
+    .coming-soon {
+        font-size: 42px;
+    }
+}
+
+/* Media query for 811px to 1024px */
+@media screen and (min-width: 811px) and (max-width: 1024px) {
+    /* Styles for 1024x1366 */
+    .text-1 {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 32px;
+    }
+
+    .coming-soon {
+        font-size: 40px;
+    }
+}
+
+/* Media query for 721px to 810px */
+@media screen and (min-width: 721px) and (max-width: 810px) {
+    /* Styles for 810x1080 */
+    .text-1 {
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 30px;
+    }
+
+    .coming-soon {
+        font-size: 38px;
+    }
+}
+
+/* Media query for 601px to 720px */
+@media screen and (min-width: 601px) and (max-width: 720px) {
+    /* Styles for 720x1280, 834x1194, 744x1133 */
+    .text-1 {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    .text-2 {
+        font-size: 28px;
+    }
+
+    .coming-soon {
+        font-size: 36px;
+    }
+}
+
+/* Media query for 481px to 600px */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    /* Styles for 601x962 */
+    .text-1 {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    .text-2 {
+        font-size: 26px;
+    }
+
+    .coming-soon {
+        font-size: 34px;
+    }
+}
+
+/* Media query for up to 480px */
+@media screen and (max-width: 480px) {
+    /* Styles for 480x800, 640x1136, 720x1280, 750x1334 */
+    .logo {
+        max-width: 70%;
+        max-height: auto;
+        margin-top: 10px;
+    }
+
+    .text-1 {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .Women {
+        max-width: 90%;
+        max-height: auto;
+        margin-top: 10px;
+    }
+
+    .text-2 {
+        font-size: 24px;
+    }
+
+    .coming-soon {
+        font-size: 32px;
+    }
+}
+
+/* Media query for tablet landscape */
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+    /* Styles for 1024x768 */
+    .text-1 {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 32px;
+    }
+
+    .coming-soon {
+        font-size: 40px;
+    }
+}
+
+/* Media query for tablet portrait */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    /* Styles for 768x1024 */
+    .text-1 {
+        font-size: 22px;
+        margin: 20px;
+    }
+
+    .text-2 {
+        font-size: 30px;
+    }
+
+    .coming-soon {
+        font-size: 38px;
+    }
+}
+
+/* Media query for smart watches */
+@media screen and (max-width: 320px) {
+    /* Styles for 320x480 */
+    .text-1 {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .text-2 {
+        font-size: 20px;
+    }
+
+    .coming-soon {
+        font-size: 28px;
+    }
+}
