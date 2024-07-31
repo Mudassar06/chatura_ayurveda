@@ -106,103 +106,65 @@ header .appo p {
 
 /* Banner Ends */
 
-/* First therapy starts */
-
-.block1 {
+/* Treatment/Service Section starts */
+.service-grid {
     display: flex;
-    flex-direction: column;
-    margin: 30px;
-    width: 365px;
-    height: 350px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.service-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
     color: #7A7215;
 }
 
-.col-1 img {
+.service-item img {
     width: 125px;
     height: 128px;
     border-top-left-radius: 25px;
     box-shadow: 25px 25px 0px 0px #E5E4B8;
-    margin-right: 30px;
+    margin-bottom: 15px;
 }
 
-.col-1 h4 {
+.service-name {
     font-size: 20px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.col-2 p {
+.service-item p {
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
-.col-2 h3 {
-    font-size: 18px;
-}
-
-.col-2 .ben {
+.service-benefits {
+    list-style-type: none;
     padding-left: 15px;
+    text-align: left;
+    margin: 10px 0;
 }
 
-.price h3 {
-    font-size: 19px;
+.service-time {
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.price p {
+.service-prices p {
     font-size: 15px;
+    margin: 5px 0;
 }
 
+/* Treatment/Service Section ends */
 
-/* first-block starts */
-.first-therapy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-
-.first-therapy .line {
-    border: 2px solid #E5E4B8;
-    height: 340px;
-}
-
-.width-line {
-    margin: 20px 50px;
-    background-color: #E5E4B8;
-    height: 4px;
-    border: none;
-}
-
-/* first-block ends */
-
-/* Ayurvedic Facials */
-.ayurvedic {
-    background-color: #E5E4B8;
-    position: relative;
-
-}
-
-.ayurvedic .center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.ayurvedic .col-1 img {
-    width: 125px;
-    height: 128px;
-    border-top-left-radius: 25px;
-    box-shadow: 25px 25px 0px 0px #fff;
-    margin-right: 30px;
-}
-
-/* Ayurvedic Facials ends*/
 /* Packages start */
 .women {
     display: flex;
@@ -268,7 +230,7 @@ header .appo p {
     margin-top: 10px;
 }
 
-/* packages end */
+/* Packages ends here */
 
 /* ethos start */
 .container {
@@ -324,17 +286,24 @@ header .appo p {
 }
 
 .one-line {
-
     &:before,
     &:after {
         background: black;
     }
 }
 
-
 @media (max-width:768px) {
     .container {
         padding: 20px;
+    }
+    .service-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width:480px) {
+    .service-item {
+        width: 100%;
     }
 }
 
@@ -386,9 +355,111 @@ header .appo p {
 .add2 .address {
     font-size: 18px;
 }
+/* footer ends */
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+    .service-grid {
+        max-width: 900px;
+    }
+    .service-item {
+        width: calc(50% - 40px); /* Two items per row */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service-grid {
+        max-width: 700px;
+    }
+    .exclusive h4 {
+        width: 60%;
+    }
+    .exclusive p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .logo img {
+        width: 25%;
+    }
+    .service-grid {
+        max-width: 500px;
+    }
+    .service-item {
+        width: calc(100% - 40px); /* One item per row */
+    }
+    .container .box-container {
+        gap: 30px 100px;
+    }
     .flex-container {
         flex-direction: column;
+        padding: 30px 50px;
+    }
+    .flex-item-left, .flex-item-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .appo {
+        flex-direction: column;
+    }
+    .exclusive h4 {
+        width: 80%;
+        font-size: 20px;
+    }
+    .exclusive p {
+        font-size: 18px;
+    }
+    .centered {
+        font-size: 30px;
+    }
+    .service-item img {
+        width: 100px;
+        height: 100px;
+    }
+    .service-name {
+        font-size: 18px;
+    }
+    .service-item p, .service-benefits, .service-time, .service-prices p {
+        font-size: 14px;
+    }
+    .container .box-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .container .box-container .box img {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .logo img {
+        width: 40%;
+    }
+    .exclusive h4 {
+        width: 90%;
+        font-size: 18px;
+    }
+    .exclusive p {
+        font-size: 16px;
+    }
+    .centered {
+        font-size: 24px;
+    }
+    .container .box-container {
+        grid-template-columns: 1fr;
+    }
+    .flex-item-left p, .flex-item-left a {
+        font-size: 20px;
+    }
+    .flex-item-right h3 {
+        font-size: 24px;
+    }
+    .add1 .title, .add2 .title {
+        font-size: 20px;
+    }
+    .add1 .address, .add2 .address {
+        font-size: 16px;
     }
 }
