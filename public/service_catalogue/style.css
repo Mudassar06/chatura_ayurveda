@@ -121,7 +121,7 @@ header .appo p {
     padding: 20px;
     text-align: center;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: calc(33.333% - 40px);
     box-sizing: border-box;
     color: #7A7215;
@@ -178,7 +178,6 @@ header .appo p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
 }
 
 .top {
@@ -194,7 +193,7 @@ header .appo p {
 }
 
 .package1 {
-    width: 350px;
+    width: 300px;
     margin: 50px 20px;
 }
 
@@ -276,16 +275,16 @@ header .appo p {
 
 .lin {
     align-items: center;
-    margin: 1em -1em;
 
     &:before,
     &:after {
         height: 1px;
-        margin: 0 1em;
+        margin: 20px;
     }
 }
 
 .one-line {
+
     &:before,
     &:after {
         background: black;
@@ -296,6 +295,7 @@ header .appo p {
     .container {
         padding: 20px;
     }
+
     .service-item {
         width: calc(50% - 40px);
     }
@@ -330,9 +330,11 @@ header .appo p {
 }
 
 .flex-item-left a {
-    font-size: 30px;
+    font-size: 35px;
     text-decoration: none;
     color: #4D602B;
+    white-space: -moz-pre-wrap !important;
+    word-wrap: break-word;
 }
 
 .flex-item-right {
@@ -355,14 +357,24 @@ header .appo p {
 .add2 .address {
     font-size: 18px;
 }
+
+@media (max-width:480px) {
+    .service-item {
+        flex-direction: column;
+    }
+}
+
+
 /* footer ends */
 
 @media screen and (max-width: 1200px) {
     .service-grid {
         max-width: 900px;
     }
+
     .service-item {
-        width: calc(50% - 40px); /* Two items per row */
+        width: calc(50% - 40px);
+        /* Two items per row */
     }
 }
 
@@ -370,32 +382,50 @@ header .appo p {
     .service-grid {
         max-width: 700px;
     }
+
     .exclusive h4 {
         width: 60%;
     }
+
     .exclusive p {
         width: 90%;
     }
+
+    .flex-item-left a {
+        font-size: 20px;
+    }
+
+    .flex-item-left p {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     header .logo img {
         width: 25%;
     }
+
     .service-grid {
         max-width: 500px;
     }
+
     .service-item {
-        width: calc(100% - 40px); /* One item per row */
+        width: calc(100% - 40px);
+        /* One item per row */
     }
+
     .container .box-container {
         gap: 30px 100px;
     }
+
     .flex-container {
         flex-direction: column;
         padding: 30px 50px;
     }
-    .flex-item-left, .flex-item-right {
+
+    .flex-item-left,
+    .flex-item-right {
         width: 100%;
     }
 }
@@ -404,62 +434,92 @@ header .appo p {
     header .appo {
         flex-direction: column;
     }
+
     .exclusive h4 {
         width: 80%;
         font-size: 20px;
     }
+
     .exclusive p {
         font-size: 18px;
     }
+
     .centered {
         font-size: 30px;
     }
+
     .service-item img {
         width: 100px;
         height: 100px;
     }
+
     .service-name {
         font-size: 18px;
     }
-    .service-item p, .service-benefits, .service-time, .service-prices p {
+
+    .service-item p,
+    .service-benefits,
+    .service-time,
+    .service-prices p {
         font-size: 14px;
     }
+
     .container .box-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
     .container .box-container .box img {
         height: 100px;
     }
+
+    .flex-item-left a {
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
     header .logo img {
         width: 40%;
     }
+
     .exclusive h4 {
         width: 90%;
         font-size: 18px;
     }
+
     .exclusive p {
         font-size: 16px;
     }
+
     .centered {
         font-size: 24px;
     }
+
     .container .box-container {
         grid-template-columns: 1fr;
     }
-    .flex-item-left p, .flex-item-left a {
+
+    .flex-item-left p {
         font-size: 20px;
     }
+
+    .flex-item-left a {
+        font-size: 15px;
+    }
+
     .flex-item-right h3 {
         font-size: 24px;
     }
-    .add1 .title, .add2 .title {
+
+    .add1 .title,
+    .add2 .title {
         font-size: 20px;
     }
-    .add1 .address, .add2 .address {
+
+    .add1 .address,
+    .add2 .address {
         font-size: 16px;
     }
 }
