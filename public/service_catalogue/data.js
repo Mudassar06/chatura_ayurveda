@@ -100,7 +100,7 @@ const treatments = [
     },
     {
         name: "Pigmentation Reduction Facial",
-        image: "img/pigmentation reductio facial.jpg",
+        image: "img/Pigmentation reductio facial.jpg",
         description: "Our Pigmentation Reduction Facial begins with a back massage, cleansing and scrubbing, followed by a face massage and steaming. Application of a herbal face mask (Lepan) completes the treatment, which is concluded with a soothing foot massage. Using medicated oils, serums, and 'lepans' crafted with saffron, arjun, and rakta chandana, this treatment effectively reduces pigmentation and black spots, resulting in an even skin tone.",
         benefits: [
             "Effectively reduces pigmentation and black spots",
@@ -158,7 +158,7 @@ const treatments = [
     },
     {
         name: "Hair Color Pack",
-        image: "img/hair colur pack.jpg",
+        image: "img/Hair colur pack.jpg",
         description: "Our natural hair color pack, crafted with Ayurvedic herbs, offers vibrant shades naturally without staining the scalp or skin and without side effects. This long-lasting hair color is suitable for all hair types.",
         benefits: [
             "Heals the scalp",
